@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Research and perspectives from Horizon LLM. Explore agentic verification, test-time scaling, harness evaluation, self-distillation, and policy optimization.">
+  <title>Blog · Horizon LLM</title>
+  <link rel="canonical" href="https://horizon-llm.github.io/blog/">
+  <link rel="icon" type="image/png" href="../assets/horizon-github-logo.png">
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to articles</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Horizon LLM blog"><img src="../assets/horizon-github-logo.png" width="40" height="40" alt=""><span>HORIZON <small>LLM</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="./" aria-current="page">Blog</a>
+    </nav>
+    <a class="github-link" href="https://github.com/horizon-llm" aria-label="Horizon LLM on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span>GitHub</span><span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">THE HORIZON NOTEBOOK</p>
+      <h1 id="page-title">Blog<span>.</span></h1>
+      <p class="intro-copy">Research, ideas, and progress toward more capable intelligence.</p>
+    </section>
+
+    <section class="articles-section" aria-label="Browse articles">
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filter articles by topic">
+          <button type="button" data-filter="all" aria-pressed="true">All posts <span>04</span></button>
+          <button type="button" data-filter="scaling" aria-pressed="false">Test-time scaling</button>
+          <button type="button" data-filter="evaluation" aria-pressed="false">Agent evaluation</button>
+          <button type="button" data-filter="distillation" aria-pressed="false">Self-distillation</button>
+          <button type="button" data-filter="optimization" aria-pressed="false">Policy optimization</button>
+        </div>
+        <div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><label class="sr-only" for="article-search">Search articles</label><input id="article-search" type="search" placeholder="Search articles…" autocomplete="off"><button type="button" id="clear-search" aria-label="Clear search" hidden>×</button></div>
+      </div>
+
+      <div class="list-heading"><span>RESEARCH &amp; PERSPECTIVES</span><p id="result-count" role="status" aria-live="polite">4 articles</p></div>
+      <div class="article-list">
+        <article class="article-card" data-topic="scaling">
+          <a class="article-link" href="https://horizon-llm.github.io/IOI2026/" aria-labelledby="arbiter-title">
+            <div class="article-visual teaser-visual">
+              <img src="../assets/arbiter-teaser.svg" width="900" height="330" alt="Arbiter teaser: contest score versus total tokens, comparing verifier-guided refinement with two sampling baselines.">
+              <div class="teaser-legend arbiter-legend" aria-hidden="true"><span><i></i>Arbiter</span><span><i></i>score@k</span><span><i></i>longest-of-k</span></div>
+            </div>
+            <div class="article-copy">
+              <div class="article-topline"><span class="tag tag-green">Test-time scaling</span><span class="article-arrow" aria-hidden="true">↗</span></div>
+              <h2 id="arbiter-title">Arbiter: Sample-Efficient Test-Time Scaling with an Agentic Verifier</h2>
+              <p class="summary">From searching more to refining better. An agentic verifier turns failed solutions into actionable feedback, guiding competitive-programming agents toward the IOI gold-medal line.</p>
+              <div class="article-meta"><span>Zheye Deng, Sha Li, Changlong Yu, et al.</span><span class="meta-dot" aria-hidden="true">·</span><time datetime="2026-08-24">August 24, 2026</time></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="article-card" data-topic="evaluation">
+          <a class="article-link" href="https://wenwen-d.github.io/blog/harness-delta-attribution/index.html" aria-labelledby="harness-title">
+            <div class="article-visual teaser-visual">
+              <img src="../assets/harness-teaser.svg" width="760" height="252" alt="Harness-Delta Attribution teaser: contributions of overfitting, test-time scaling, and generalizable improvement across ALFWorld, LiveMath, CREATE, and SWE-bench Verified.">
+              <div class="teaser-legend harness-legend" aria-hidden="true"><span><i></i>Overfitting</span><span><i></i>Test-time scaling</span><span><i></i>Generalizable improvement</span></div>
+            </div>
+            <div class="article-copy">
+              <div class="article-topline"><span class="tag tag-purple">Agent evaluation</span><span class="article-arrow" aria-hidden="true">↗</span></div>
+              <h2 id="harness-title">What Evolves When We Talk About Harness Evolution?</h2>
+              <p class="summary">Higher scores are only part of the story. Harness-Delta Attribution separates gains from overfitting, additional test-time compute, and improvements that generalize.</p>
+              <div class="article-meta"><span>Wenxuan Ding, Qin Lu, Changlong Yu, et al.</span><span class="meta-dot" aria-hidden="true">·</span><time datetime="2026-08-06">August 6, 2026</time></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="article-card" data-topic="distillation">
+          <a class="article-link" href="https://yuweizhang.notion.site/resd" aria-labelledby="resd-title">
+            <div class="article-visual teaser-visual">
+              <img src="../assets/resd-teaser.jpg" width="2048" height="866" alt="RESD teaser: per-task and per-test-case validation accuracy during training on Manufactoria-Has, comparing RESD with SDPO baselines." loading="lazy">
+            </div>
+            <div class="article-copy">
+              <div class="article-topline"><span class="tag tag-blue">Self-distillation</span><span class="article-arrow" aria-hidden="true">↗</span></div>
+              <h2 id="resd-title">Learning from Rare Success and Rich Feedback via Reflection-Enhanced Self-Distillation</h2>
+              <p class="summary">Learning even when success is rare. RESD turns feedback from failed attempts into reflections and reusable lessons, giving a model richer supervision through self-distillation.</p>
+              <div class="article-meta"><span>Yuwei Zhang, Sha Li, Changlong Yu, et al.</span><span class="meta-dot" aria-hidden="true">·</span><time datetime="2026-05-12">May 12, 2026</time></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="article-card" data-topic="optimization">
+          <a class="article-link" href="https://zhenghaoxu.notion.site/Revisiting-Kimi-s-Policy-Mirror-Descent-2fe7f18c8c2a801ba0d5fba25690f5ce" aria-labelledby="pmd-title">
+            <div class="article-visual teaser-visual pmd-visual">
+              <img src="../assets/pmd-teaser.png" width="790" height="708" alt="Policy mirror descent comparison: PMD-partition and Kimi’s PMD follow different update trajectories on a three-action probability simplex." loading="lazy">
+            </div>
+            <div class="article-copy">
+              <div class="article-topline"><span class="tag tag-amber">Policy optimization</span><span class="article-arrow" aria-hidden="true">↗</span></div>
+              <h2 id="pmd-title">Revisiting (Kimi’s) Policy Mirror Descent</h2>
+              <p class="summary">What makes Kimi’s policy updates work? An analysis of PMD reveals implicit mixed KL–χ² regularization, explaining more conservative updates and robustness when rollout samples are limited.</p>
+              <div class="article-meta"><span>Zhenghao Xu, Qin Lu, Changlong Yu, et al.</span><span class="meta-dot" aria-hidden="true">·</span><span>Updated <time datetime="2026-02-10">February 10, 2026</time></span></div>
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="empty-state" hidden><h2>No matching articles</h2><p>Try a different keyword or explore all posts.</p><button type="button" id="reset-filters">Show all posts <span aria-hidden="true">↗</span></button></div>
+    </section>
+
+  </main>
+  <footer class="site-footer"><p>© 2026 Horizon LLM</p><p>Focus on what matters over a long time horizon.</p></footer>
+  <script src="blog.js"></script>
+</body>
+</html>
